@@ -1,45 +1,18 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel Food Ordering</title>
-    <link rel="stylesheet" type="text/css" href="/static/css/style1.css">
+    <link rel="stylesheet" href="/static/css/style1.css">
 </head>
 <body>
     <header>
         <h1>Hotel Food Ordering</h1>
     </header>
     <main>
-        <section class="menu">
-            <div class="menu-item">
-                <img src="https://example.com/pasta.jpg" alt="Pasta">
-                <div class="menu-item-content">
-                    <h3>Spaghetti Pasta</h3>
-                    <p>A delightful Italian pasta with tomato sauce.</p>
-                    <p><strong>Price:</strong> $12</p>
-                    <button onclick="orderFood('Spaghetti Pasta', 12)">Order Now</button>
-                </div>
-            </div>
-            <div class="menu-item">
-                <img src="https://example.com/pizza.jpg" alt="Pizza">
-                <div class="menu-item-content">
-                    <h3>Cheese Pizza</h3>
-                    <p>Classic cheese pizza with a crispy crust.</p>
-                    <p><strong>Price:</strong> $15</p>
-                    <button onclick="orderFood('Cheese Pizza', 15)">Order Now</button>
-                </div>
-            </div>
-            <div class="menu-item">
-                <img src="https://example.com/burger.jpg" alt="Burger">
-                <div class="menu-item-content">
-                    <h3>Veggie Burger</h3>
-                    <p>Loaded veggie burger with fresh ingredients.</p>
-                    <p><strong>Price:</strong> $10</p>
-                    <button onclick="orderFood('Veggie Burger', 10)">Order Now</button>
-                </div>
-            </div>
+        <section id="menu-container" class="menu">
+            <!-- Menu items will be dynamically loaded here -->
         </section>
         <div id="order-container">
             <h2>Your Orders</h2>
@@ -47,10 +20,10 @@
             <div id="total-amount">Total Amount: $0</div>
         </div>
         <div style="text-align: center; margin-top: 20px;">
-            <button id="submit" onclick="submitOrder()">Submit Order</button></br></br>
-            <button id="print" onclick="printBill()">Print Bill</button>
+            <button onclick="submitOrder()">Submit Order</button>
+            <button onclick="printBill()">Print Bill</button>
         </div>
     </main>
-    <script type="text/javascript" src="/static/js/script.js"></script>
+    <script src="/static/js/script.js"></script>
 </body>
 </html>

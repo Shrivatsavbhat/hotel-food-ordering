@@ -1,0 +1,12 @@
+CREATE TABLE menu (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL,
+    description TEXT,
+    price REAL NOT NULL,
+    image_url TEXT
+);
+
+INSERT INTO menu (name, description, price, image_url) VALUES
+('Spaghetti Pasta', 'A delightful Italian pasta with tomato sauce.', 12, 'https://example.com/pasta.jpg'),
+('Cheese Pizza', 'Classic cheese pizza with a crispy crust.', 15, 'https://example.com/pizza.jpg'),
+('Veggie Burger', 'Loaded veggie burger with fresh ingredients.', 10, 'https://example.com/burger.jpg');

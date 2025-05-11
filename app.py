@@ -28,7 +28,7 @@ def place_order():
     items = data.get('items', [])
     total = data.get('total', 0)
     if items and total > 0:
-        return jsonify({"message": f"Order placed successfully for ${total}!"})
+        return jsonify({"message": f"Order placed successfully for ₹{total}!"})
     return jsonify({"message": "Invalid order!"}), 400
 
 # Serve the main page
